@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profileLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0BC97"
+    tools:context=".ProfileActivity">
+
+    <!-- Profile Image Placeholder -->
+
+    <!-- Username Text -->
+
+    <!-- Email Text -->
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_corners_bg"
+        android:backgroundTint="#DDDDDD"
+        android:clipToOutline="true"
+        android:contentDescription="Profile Picture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pfpimageplaceholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/favoriteBlend"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_corners_bg"
+        android:backgroundTint="#DDDDDD"
+        android:clipToOutline="true"
+        android:contentDescription="Profile Picture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/taro"
+        app:layout_constraintEnd_toEndOf="@+id/favoriteBlendTitle"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/favoriteBlendTitle"
+        app:layout_constraintTop_toBottomOf="@+id/favoriteBlendTitle" />
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Username"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profileImage"
+        app:layout_constraintStart_toStartOf="@+id/profileImage"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user@example.com"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameText" />
+
+
+    <!-- Edit Button -->
+
+    <TextView
+        android:id="@+id/favoriteBlendTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Favorite Blend:"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/emailText"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/emailText"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <TextView
+        android:id="@+id/favoriteBlendValue"
+        android:text="Matcha Milk Tea w/ Tapioca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editProfileButton"
+        app:layout_constraintEnd_toEndOf="@+id/favoriteBlend"
+        app:layout_constraintStart_toStartOf="@+id/favoriteBlendTitle"
+        app:layout_constraintTop_toBottomOf="@+id/favoriteBlend" />
+
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F6A828"
+        android:text="Edit Profile"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText"
+        app:layout_constraintVertical_bias="0.904" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

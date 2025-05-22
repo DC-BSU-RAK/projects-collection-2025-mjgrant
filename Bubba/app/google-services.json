@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1035809150904",
+    "project_id": "bubba-dfe90",
+    "storage_bucket": "bubba-dfe90.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035809150904:android:c80902d47e2a00c6f8a14d",
+        "android_client_info": {
+          "package_name": "com.example.bubba"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEoMnORfylzU4fLobwCIONrXPwDyqbfQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
